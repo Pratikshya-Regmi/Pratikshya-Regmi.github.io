@@ -10,17 +10,17 @@
 ############################
 
 # Name of website
-title: My website
+title: My new website
 
 # Your name to show in the footer
-author: Some Person
+author: Pratikshya Regmi
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "about me"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
@@ -50,17 +50,12 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "pregmi3@ncsu.edu"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+  github: Pratikshya-Regmi
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
-#  linkedin: daattali
+  linkedin: https://www.linkedin.com/in/pratiregmi/
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -78,7 +73,7 @@ social-network-links:
 #  google-scholar: your google scholar
 #  discord: "invite_code" or "users/userid" or "invite/invite_code"
 #  kaggle: yourname
-#  hackerrank: yourname
+hackerrank: https://www.hackerrank.com/profile/pratiregmi78
 #  gitlab: yourname
 #  itchio: yourname
 #  untappd: yourname
@@ -258,7 +253,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "America/NewYork"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
