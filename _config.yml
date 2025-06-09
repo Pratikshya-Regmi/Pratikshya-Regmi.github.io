@@ -20,7 +20,7 @@ author: Pratikshya Regmi
 ###############################################
 
 navbar-links:
-  About Me: "about me"
+  About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://www.linkedin.com/in/pratiregmi/"
     - Learn markdown: "https://www.markdowntutorial.com/"
