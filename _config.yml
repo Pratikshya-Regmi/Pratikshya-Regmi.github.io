@@ -271,7 +271,7 @@ kramdown:
 defaults:
   -
     scope:
-      path: ""powere
+      path: ""
       type: "posts"
     values:
       layout: "post"
