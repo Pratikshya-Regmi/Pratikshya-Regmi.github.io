@@ -9,18 +9,20 @@ Sharing my research with the wider geospatial and scientific community has been 
 
 <!-- AGU 2024 -->
 <div style="flex: 1 1 400px; max-width: 600px; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
-  <img src="/assets/img/agu1.jpg" alt="AGU 2024 Presentation" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+
   <h3>AGU Annual Meeting 2024</h3>
   <p><strong>Location:</strong> Washington, D.C.<br><strong>Topic:</strong> Visibility Analysis for Safe UAS Operation</p>
   <p>Presented novel visibility analysis techniques for safe and efficient UAS flight planning in complex terrain using LiDAR-based modeling.</p>
+  <img src="/assets/img/agu1.jpg" alt="AGU 2024 Presentation" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
 </div>
 
 <!-- FIG 2023 -->
 <div style="flex: 1 1 400px; max-width: 600px; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
-  <img src="/assets/img/fig2.jpg" alt="FIG 2023 Presentation" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+
   <h3>FIG Working Week 2023</h3>
   <p><strong>Location:</strong> Orlando, Florida<br><strong>Topic:</strong> Overview of the UAS Campus Survey Project at Texas A&M University-Corpus Christi</p>
   <p>Discussed the development and findings from a large-scale UAS-based campus mapping initiative, with applications for campus planning and geospatial education.</p>
+  <img src="/assets/img/fig2.jpg" alt="FIG 2023 Presentation" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
 </div>
 
 <!-- ASPRS 2022 -->
@@ -32,10 +34,11 @@ Sharing my research with the wider geospatial and scientific community has been 
 
 <!-- UASG 2019 -->
 <div style="flex: 1 1 400px; max-width: 600px; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
-  <img src="/assets/img/UASG.jpg" alt="UASG 2019 Presentation" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+
   <h3>UASG-2019 Conference</h3>
   <p><strong>Location:</strong> IIT Roorkee, India<br><strong>Topic:</strong> Analyzing the Effect of Distribution Pattern and Number of GCPs on Overall Accuracy of UAV Photogrammetric Results</p>
   <p>Received best paper award for presenting a methodological evaluation of GCP distribution patterns and their effect on UAV-based mapping accuracy.</p>
+    <img src="/assets/img/UASG.jpg" alt="UASG 2019 Presentation" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
 </div>
 
 </div>
