@@ -1,5 +1,9 @@
+---
 
-# 🌍 GeoGiggles 🤓
+title: 🌍 GeoGiggles 🤓
+
+---
+
 
 Welcome to **GeoGiggles** — where **coordinates meet comedy**, **rasters roast vectors**, and **geospatial data science takes a coffee break**!
 
