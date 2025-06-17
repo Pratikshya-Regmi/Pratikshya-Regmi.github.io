@@ -1,8 +1,3 @@
----
-layout: page
-title: Symposiums
-permalink: /symposiums/
----
 
 # 🏛️ Symposium Participation
 
