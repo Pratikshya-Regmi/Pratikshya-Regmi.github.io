@@ -1,4 +1,8 @@
-### Publications
+---
+
+title: Publications
+
+---
 
 - **Regmi, P.**, Mitasova, H. (2024). *Visibility Analysis for Safe UAS Operation Using Lidar Datasets*.  
   Presented at the American Geophysical Union (AGU) Annual Meeting.  
