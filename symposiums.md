@@ -1,5 +1,9 @@
+---
 
-# 🏛️ Symposium Participation
+title:  🏛️ Symposium Participation
+
+---
+
 
 Engaging with the research community through symposiums has given me the opportunity to present my work, exchange ideas, and connect with scholars across disciplines. Below are two symposiums where I have actively participated and shared my geospatial research journey.
 
