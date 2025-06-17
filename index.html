@@ -12,3 +12,30 @@ subtitle: This is where I will tell my friends way too much about me!!!
        style="max-width: 95%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <p><em>Field meets data science — mapping the future.</em></p>
 </section>
+
+<!-- 🔥 LinkedIn Highlights -->
+<section style="margin-top: 3rem;">
+  <h2 style="text-align: center;">🔍 Highlights from LinkedIn</h2>
+  <div id="linkedin-highlights" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+    {% assign highlights = site.data.linkedin_post | sample: 3 %}
+    {% for post in highlights %}
+    <div style="flex: 1 1 300px; max-width: 300px; border: 1px solid #ddd; border-radius: 10px; padding: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <img src="{{ post.image }}" alt="LinkedIn post thumbnail" style="width: 100%; border-radius: 8px;">
+      <h4 style="margin-top: 10px;">{{ post.title }}</h4>
+      <p style="font-size: 0.9em; color: #555;">{{ post.snippet }}</p>
+      <a href="{{ post.link }}" target="_blank" style="color: #008AFF; font-weight: bold;">Read more →</a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+// Optional: reloads posts randomly on each refresh if needed beyond Liquid
+window.addEventListener('DOMContentLoaded', () => {
+  const posts = Array.from(document.querySelectorAll('#linkedin-highlights > div'));
+  for (let i = posts.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    posts[i].parentNode.insertBefore(posts[j], posts[i]);
+  }
+});
+</script>
