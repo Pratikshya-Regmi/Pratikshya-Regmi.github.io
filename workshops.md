@@ -1,5 +1,8 @@
+---
 
-# 🛠️ Workshops Delivered
+title: 🛠️ Workshops Delivered
+
+---
 
 As part of my commitment to geospatial education and outreach, I've had the opportunity to **host and contribute to hands-on workshops** focused on open-source tools, GIS modeling, and community engagement. These sessions reflect my passion for teaching and translating technical knowledge into accessible experiences.
 
