@@ -25,7 +25,7 @@ As part of my commitment to geospatial education and outreach, I've had the oppo
   <p><strong>Date:</strong> May, 2024  <br>
      <strong>Location:</strong> CSDMS (Community Surface Dynamics Modeling System) 2024 Annual Meeting, Montclair University, New Jersey </p>
   <p>This student-led workshop introduced the fundamentals of GRASS GIS, empowering geospatial professionals to apply spatial modeling techniques using open-source tools.</p>
-  <a href="https://cnr.ncsu.edu/geospatial/news/2024/06/03/students-teach-grass-gis/" target="_blank" style="display:inline-block; margin-top:10px; padding:10px 20px; background-color:#007ACC; color:white; text-decoration:none; border-radius:6px;">🔗 Read More</a>
+  <a href="https://cnr.ncsu.edu/geospatial/news/2024/06/03/students-teach-grass-gis/" target="_blank" style="display:inline-block; margin-top:10px; padding:10px 20px; background-color:#007ACC; color:white; text-decoration:none; border-radius:6px;">🔗 View Workshop Recap</a>
   <img src="/assets/img/csdms1.jpeg" alt="GRASS GIS Workshop" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
 </div>
 
