@@ -1,5 +1,8 @@
+---
 
-# 🌟 Outreach & STEM Engagement
+title: 🌟 Outreach & STEM Engagement
+
+---
 
 Giving back to the community through **STEM education, youth engagement, and volunteering** has been a meaningful part of my academic journey. Whether mentoring future scientists, showcasing interactive technologies, or judging creative science fair projects, each experience has inspired me just as much as I hope to inspire others.
 
