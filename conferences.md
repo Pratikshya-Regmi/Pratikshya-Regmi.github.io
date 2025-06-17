@@ -16,6 +16,14 @@ Sharing my research with the wider geospatial and scientific community has been 
   <img src="/assets/img/agu1.jpg" alt="AGU 2024 Presentation" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
 </div>
 
+<!-- IALE 2024 -->
+<div style="flex: 1 1 400px; max-width: 600px; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
+  <h3>IALE North America 2024</h3>
+  <p><strong>Location:</strong> Virtual / North America<br><strong>Topic:</strong> Accessing the Potential of Large Language Models (LLMs) for Geospatial Analysis</p>
+  <p>Delivered a digital visualization showcase on using open-source LLMs integrated with GRASS GIS for geospatial terrain modeling and intelligent geospatial analysis.</p>
+  <img src="/assets/img/iale.jpg" alt="IALE 2024 Presentation" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+</div>
+
 <!-- FIG 2023 -->
 <div style="flex: 1 1 400px; max-width: 600px; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
 
