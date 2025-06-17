@@ -12,7 +12,7 @@ Engaging with the research community through symposiums has given me the opportu
   <img src="/assets/img/cnrsyposim1.jpg" alt="CNR Symposium" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
   <h3>College of Natural Resources Graduate Research Symposium</h3>
   <p><strong>Hosted by:</strong> NC State University – College of Natural Resources
-     <br><strong>Date:</strong> 2024</p>
+     <br><strong>Date:</strong> 2025</p>
   <p>I presented my ongoing research on visibility analysis for safe UAS operation, engaging with faculty and graduate peers at the CNR Annual Symposium.</p>
 </div>
 
