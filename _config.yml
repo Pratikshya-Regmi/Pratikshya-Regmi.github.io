@@ -26,6 +26,7 @@ navbar-links:
     - Conference Talks: "conferences"
     - Workshops Delivered: "workshops"
     - Symposium Participation: "symposiums"
+    - Hackathon: "hackathon"
 
   Publications: "Publications"
   Achievements:
