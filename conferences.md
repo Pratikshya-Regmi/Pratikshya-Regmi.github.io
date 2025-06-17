@@ -1,5 +1,8 @@
+---
 
-# 🎤 Conference Talks
+title: 🎤 Conference Talks
+
+---
 
 Sharing my research with the wider geospatial and scientific community has been a rewarding part of my journey. Here's a selection of conferences where I've presented original work related to geospatial analytics, UAV photogrammetry, and open-source applications.
 
