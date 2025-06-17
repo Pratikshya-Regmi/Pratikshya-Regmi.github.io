@@ -21,7 +21,7 @@ Sharing my research with the wider geospatial and scientific community has been 
   <h3>IALE North America 2024</h3>
   <p><strong>Location:</strong> Virtual / North America<br><strong>Topic:</strong> Accessing the Potential of Large Language Models (LLMs) for Geospatial Analysis</p>
   <p>Delivered a digital visualization showcase on using open-source LLMs integrated with GRASS GIS for geospatial terrain modeling and intelligent geospatial analysis.</p>
-  <img src="/assets/img/iale.jpg" alt="IALE 2024 Presentation" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+  <img src="/assets/img/iale.jpeg" alt="IALE 2024 Presentation" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
 </div>
 
 <!-- FIG 2023 -->
