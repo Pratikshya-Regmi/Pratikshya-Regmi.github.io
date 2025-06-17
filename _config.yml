@@ -23,7 +23,7 @@ navbar-links:
   About Me: "aboutme"
   Projects & Presentations:
     - Projects: "projects"
-    - Conference Talks: "conference"
+    - Conference Talks: "conferences"
     - Workshops Delivered: "workshops"
     - Symposium Participation: "symposiums"
 
