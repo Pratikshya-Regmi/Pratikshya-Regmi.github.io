@@ -22,8 +22,8 @@ author: Pratikshya Regmi
 navbar-links:
   About Me: "aboutme"
   Projects & Presentations:
-    - Projects: 
-    - Conference Talks: 
+    - Projects: "projects"
+    - Conference Talks: "conference"
     - Workshops Delivered: "workshops"
     - Symposium Participation: "symposiums"
 
@@ -34,7 +34,7 @@ navbar-links:
  Highlights:
     - LLM tutorials: "https://www.linkedin.com/in/pratiregmi/"
     - Youtube: "https://www.youtube.com/@pratikshyaregmi2961"
-    - Blogs: 
+    - Blogs: "blogs"
     - GeoGiggles: "geogiggles"
 
   
