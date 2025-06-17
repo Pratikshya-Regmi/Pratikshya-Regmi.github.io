@@ -1,6 +1,9 @@
+---
 
+title: 🧠 Hackathons & Challenges
 
-# 🧠 Hackathons & Challenges
+---
+
 
 Participating in hackathons has allowed me to step out of my comfort zone, apply geospatial and AI knowledge in new ways, and collaborate with diverse, interdisciplinary teams.
 
