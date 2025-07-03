@@ -7,7 +7,7 @@ title: 🌍 GeoGiggles 🤓
 
 Welcome to **GeoGiggles** — where **coordinates meet comedy**, **rasters roast vectors**, and **geospatial data science takes a coffee break**!
 
-This is the lighter side of the geospatial world — a curated collection of memes, jokes, and visual humor born from sleepless nights debugging shapefiles, fighting projections, or writing `for` loops in R while wondering why your raster is still blank.
+This is the lighter side of the geospatial world — a curated collection of memes, jokes, and visual humor born from sleepless nights debugging shapefiles, fighting projections, or writing `for` loops in Python while wondering why your raster is still blank.
 
 ---
 
