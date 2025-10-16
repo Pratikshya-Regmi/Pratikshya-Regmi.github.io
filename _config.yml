@@ -21,11 +21,11 @@ author: Pratikshya Regmi
 navbar-links:
   About Me: "aboutme"
   Projects & Presentations:
-    - Projects: "projects"
+    - Hackathon: "hackathon"
     - Conference Talks: "conferences"
     - Workshops Delivered: "workshops"
     - Symposium Participation: "symposiums"
-    - Hackathon: "hackathon"
+    #- Projects: "projects"
 
   Publications: "Publications"
   Achievements:
