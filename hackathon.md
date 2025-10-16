@@ -19,7 +19,7 @@ We built a reproducible ML pipeline linking **climate & soil variables** to **NC
 **Details:** Read the write-up → [Hacking climate and soil data for North Carolina’s crops](<ARTICLE_URL>)
 
 <div style="text-align: center;">
-  <img src="/assets/img/PSI_hacka.png" alt="PSI Hackathon 2024 Team Photo" style="max-width: 90%; border-radius: 10px; margin-bottom: 15px;">
+  <img src="/assets/img/psi_hacka.png" alt="PSI Hackathon 2024 Team Photo" style="max-width: 90%; border-radius: 10px; margin-bottom: 15px;">
 </div>
 
 
