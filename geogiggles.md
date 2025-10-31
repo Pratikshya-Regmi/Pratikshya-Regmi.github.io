@@ -16,12 +16,12 @@ This is the lighter side of the geospatial world — a curated collection of mem
 <div class="gallery" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start;">
 
   <div style="flex: 1 1 300px;">
-    <img src="/assets/img/geogiggle.jpg" alt="Map joke 1" style="width: 100%; border-radius: 10px;">
+    <img src="/assets/img/geogiggle.jpg" alt="Map joke 1" style="width: 70%; border-radius: 10px;">
     <p><em>“I have trust issues because of... projection distortions.”</em></p>
   </div>
 
   <div style="flex: 1 1 300px;">
-    <img src="/assets/img/gis1.jpg" alt="Map joke 2" style="width: 100%; border-radius: 10px;">
+    <img src="/assets/img/gis1.jpg" alt="Map joke 2" style="width: 70%; border-radius: 10px;">
     <p><em>“Buffer zone? More like personal space boundary!”</em></p>
   </div>
 
