@@ -27,7 +27,7 @@ I had the pleasure of participating in the **2024 N.C. PSI Hackathon**, where ou
 Despite having limited prior experience in crop science, I found this challenge incredibly **rewarding and educational**. It was a crash course in agricultural AI and teamwork under pressure, and I walked away with new skills, insights, and a lot of appreciation for the intersection of machine learning and geospatial analytics.
 
 <div style="text-align: center;">
-  <img src="/assets/img/hackathon.jpg" alt="PSI Hackathon 2024 Team Photo" style="max-width: 90%; border-radius: 10px; margin-bottom: 15px;">
+  <img src="/assets/img/hackathon.jpg" alt="PSI Hackathon 2024 Team Photo" style="max-width: 100%; border-radius: 10px; margin-bottom: 15px;">
 </div>
 
 ---
