@@ -22,7 +22,7 @@ navbar-links:
   About Me: "aboutme"
   Resume/CV:
     - Resume: "resume"
-  Projects & Presentations:
+  Engagement:
     - Hackathon: "hackathon"
     - Conference Talks: "conferences"
     - Workshops Delivered: "workshops"
