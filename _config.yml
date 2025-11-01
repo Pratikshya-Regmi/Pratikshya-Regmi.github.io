@@ -20,6 +20,8 @@ author: Pratikshya Regmi
 
 navbar-links:
   About Me: "aboutme"
+  Resume/CV:
+    - Resume: "resume"
   Projects & Presentations:
     - Hackathon: "hackathon"
     - Conference Talks: "conferences"
