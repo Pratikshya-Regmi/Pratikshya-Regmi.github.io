@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Pratikshya Regmi
+# title: Pratikshya Regmi test
 subtitle: Why you'd want to collaborate with me (or maybe just grab coffee and talk geospatial AI)
 ---
 
