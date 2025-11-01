@@ -27,9 +27,10 @@ navbar-links:
     - Conference Talks: "conferences"
     - Workshops Delivered: "workshops"
     - Symposium Participation: "symposiums"
+    - Publications: "Publications"
     #- Projects: "projects"
 
-  Publications: "Publications"
+  #Publications: "Publications"
   Achievements:
     - Awards and honors: "https://www.linkedin.com/in/pratiregmi/details/honors/"
     - Certifications: "https://www.linkedin.com/in/pratiregmi/details/certifications/"
