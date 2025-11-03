@@ -21,7 +21,7 @@ author: Pratikshya Regmi
 navbar-links:
   About: "aboutme"
   Resume/CV:
-    - Resume: "resume"
+    - Resume: "/assets/Pratikshya_Resume_oct025.pdf"
   Engagement:
     - Hackathon: "hackathon"
     - Conference Talks: "conferences"
