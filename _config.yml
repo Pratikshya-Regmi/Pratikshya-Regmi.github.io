@@ -22,6 +22,7 @@ navbar-links:
   About: "aboutme"
   Resume/CV:
     - Resume: "/assets/Pratikshya_Resume_oct025.pdf"
+    - CV: "/assets/CV_PR.pdf"
   Engagement:
     - Hackathon: "hackathon"
     - Conference Talks: "conferences"
