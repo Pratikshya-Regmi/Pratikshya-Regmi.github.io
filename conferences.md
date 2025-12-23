@@ -9,6 +9,15 @@ Sharing my research with the wider geospatial and scientific community has been 
 ---
 
 <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+  
+<!-- AGU 2025 -->
+<div style="flex: 1 1 400px; max-width: 600px; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
+  <h3>AGU 2025</h3>
+  <p><strong>Location:</strong> New Orleans, Louisiana, United States<br><strong>Topic:</strong> Geomorphic Impacts and Terrain Recovery After Hurricane Helene: A Multi-Sensor Geospatial Analysis in Western North Carolina</p>
+  <p>Presented a short-term geomorphic impact study of Hurricane Helene in Chimney Rock, NC using multi-temporal LiDAR (2017, Nov 2024) and immediate post-storm SfM point clouds (Oct 2024).
+Mapped elevation change, debris accumulation, drainage modification, and infrastructure disruption to support hazard mitigation and infrastructure planning in storm-prone mountain regions.</p>
+  <img src="/assets/img/AGU.jpeg" alt="IALE 2024 Presentation" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+</div>
 
 <!-- IALE 2025 -->
 <div style="flex: 1 1 400px; max-width: 600px; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
