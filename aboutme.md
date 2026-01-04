@@ -10,6 +10,8 @@ My name is Pratikshya Regmi. I bring together the analytical precision of a geos
 - I build AI-powered geospatial tools (yes, including my own GIS chatbot!)  
 - I’ve presented at international conferences and led workshops  
 - I’m an FAA-certified drone pilot who’s just as comfortable in the field as I am in front of a whiteboard
+- I contribute to the SAFE-MCP framework to help make tool-using LLM systems more secure and reliable
+- I’m a PSI Hackathon contributor, building end-to-end AI/ML pipelines that combine historical crop yields with climate signals to identify failure events and deliver decision-ready insights
 
 
 ### My Story
