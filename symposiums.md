@@ -20,7 +20,7 @@ Engaging with the research community through symposiums and presentation events 
 
   <!-- Presentation 4 -->
   <div style="flex: 1 1 400px; max-width: 600px; border: 1px solid #ccc; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
-    <img src="/assets/img/graduate_symposium.jpg" alt="Graduate Research Symposium" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+    <img src="/assets/img/graduate_symposium.JPG" alt="Graduate Research Symposium" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
     <h3>Graduate Research Symposium</h3>
     <p><strong>Hosted by:</strong> North Carolina State University</p>
     <p>I had the opportunity to present my poster on the geomorphic impacts of Hurricane Helene in western North Carolina at the Graduate Research Symposium organized by North Carolina State University. I am very thankful to the NC State Center for Geospatial Analytics for nominating me for this opportunity. It was a meaningful experience to share my research, connect with fellow researchers, and learn from the diverse and inspiring work presented at the symposium. I am grateful for the conversations, feedback, and encouragement.</p>
