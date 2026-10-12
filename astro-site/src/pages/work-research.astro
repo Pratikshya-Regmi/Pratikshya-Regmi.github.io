@@ -6,4 +6,4 @@ import research from '../data/research.json';
 import Records from '../components/Records.astro';
 const experience=(await getCollection('experience')).sort(newestFirst);
 ---
-<Base title="Work & Experiences" description={research.description}><header class="page-head"><span class="eyebrow">Work & Experiences</span><h1>Questions grounded<br/>in a changing landscape.</h1><p>{research.methods}</p><p>{research.focus}</p></header><div class="page-body"><section><h2>Professional Experience</h2><p>Research roles, applied geospatial work, and projects that connect Earth observation with practical analysis.</p><Records entries={experience} heading="h3"/></section></div></Base>
+<Base title="Work & Experiences" description={research.description}><header class="page-head"><span class="eyebrow">Work & Experiences</span><h1>Questions grounded in a changing landscape.</h1><p>{research.methods}</p><p>{research.focus}</p></header><div class="page-body"><section><h2>Professional Experience</h2><p>Research roles, applied geospatial work, and projects that connect Earth observation with practical analysis.</p><Records entries={experience} heading="h3"/></section></div></Base>

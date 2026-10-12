@@ -6,6 +6,6 @@ import Records from '../components/Records.astro';
 const certifications=(await getCollection('certifications')).sort(newestFirst);
 ---
 <Base title="Certifications" description="Professional, technical, and leadership learning completed by Pratikshya Regmi.">
-<header class="page-head"><span class="eyebrow">Certifications</span><h1>Continued learning<br/>for better practice.</h1><p>Professional, technical, and leadership development that supports my research, collaboration, and geospatial work.</p></header>
+<header class="page-head"><span class="eyebrow">Certifications</span><h1>Continued learning for better practice.</h1><p>Professional, technical, and leadership development that supports my research, collaboration, and geospatial work.</p></header>
 <div class="page-body"><Records entries={certifications} heading="h2" compact/><a class="text-link" href="https://www.linkedin.com/in/pratiregmi/details/certifications/">View credentials on LinkedIn ↗</a></div>
 </Base>
