@@ -10,16 +10,19 @@
   <p class="debris-controls">Drag to orbit · Scroll to zoom · Double-click to reset</p>
 </section>
 <script>
-  const root = document.querySelector('[data-debris-canvas]')?.closest('.debris-viewer');
-  if (root) {
-    const canvas = root.querySelector('[data-debris-canvas]');
-    const status = root.querySelector('[data-debris-status]');
-    const gl = canvas.getContext('webgl', { antialias: true, alpha: false });
-    let points, program, buffer, positionLocation, colorLocation, pointSizeLocation;
+  function initialize(canvas: HTMLCanvasElement, status: HTMLElement) {
+    const context = canvas.getContext('webgl', { antialias: true, alpha: false });
+    if (!context) { status.textContent = 'The point-cloud viewer requires WebGL support.'; return; }
+    const gl = context;
+    let points: Float32Array[] | undefined;
+    let program: WebGLProgram | undefined;
+    let buffer: WebGLBuffer | null = null;
+    let positionLocation = -1, colorLocation = -1;
+    let pointSizeLocation: WebGLUniformLocation | null = null;
     let yaw = 0.55, pitch = 0.22, distance = 2.2, dragging = false, lastX = 0, lastY = 0;
     const vertexSource = `attribute vec3 aPosition; attribute vec3 aColor; uniform mat4 uMatrix; uniform float uPointSize; varying vec3 vColor; void main(){gl_Position=uMatrix*vec4(aPosition,1.0); gl_PointSize=uPointSize; vColor=aColor;}`;
     const fragmentSource = `precision mediump float; varying vec3 vColor; void main(){vec2 p=gl_PointCoord-0.5; if(dot(p,p)>0.25) discard; gl_FragColor=vec4(vColor,0.88);}`;
-    const compile = (type, source) => { const shader = gl.createShader(type); gl.shaderSource(shader, source); gl.compileShader(shader); if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(shader)); return shader; };
+    const compile = (type: number, source: string) => { const shader = gl.createShader(type); if (!shader) throw new Error('Unable to create point-cloud shader'); gl.shaderSource(shader, source); gl.compileShader(shader); if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(shader) || 'Point-cloud shader compilation failed'); return shader; };
     const resize = () => { const ratio = Math.min(window.devicePixelRatio || 1, 2); const box = canvas.getBoundingClientRect(); canvas.width = box.width * ratio; canvas.height = box.height * ratio; gl.viewport(0, 0, canvas.width, canvas.height); draw(); };
     const matrix = () => {
       const aspect = canvas.width / Math.max(1, canvas.height), fov = 1.05, near = 0.1, far = 100;
@@ -37,10 +40,10 @@
       gl.uniformMatrix4fv(gl.getUniformLocation(program, 'uMatrix'), false, matrix()); gl.uniform1f(pointSizeLocation, Math.max(1.5, Math.min(5, canvas.width / 260)));
       gl.drawArrays(gl.POINTS, 0, points.length); requestAnimationFrame(draw);
     };
-    const setup = (json) => {
+    const setup = (json: { points: number[][] }) => {
       points = json.points.map(point => new Float32Array([point[0], point[1], point[2], point[4], point[5], point[6]]));
       const flat = new Float32Array(points.length * 6); points.forEach((point, index) => flat.set(point, index * 6));
-      program = gl.createProgram(); gl.attachShader(program, compile(gl.VERTEX_SHADER, vertexSource)); gl.attachShader(program, compile(gl.FRAGMENT_SHADER, fragmentSource)); gl.linkProgram(program); if (!gl.getProgramParameter(program, gl.LINK_STATUS)) throw new Error('Point-cloud shader could not be linked');
+      const createdProgram = gl.createProgram(); if (!createdProgram) throw new Error('Unable to create point-cloud program'); program = createdProgram; gl.attachShader(program, compile(gl.VERTEX_SHADER, vertexSource)); gl.attachShader(program, compile(gl.FRAGMENT_SHADER, fragmentSource)); gl.linkProgram(program); if (!gl.getProgramParameter(program, gl.LINK_STATUS)) throw new Error('Point-cloud shader could not be linked');
       buffer = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buffer); gl.bufferData(gl.ARRAY_BUFFER, flat, gl.STATIC_DRAW); positionLocation = gl.getAttribLocation(program, 'aPosition'); colorLocation = gl.getAttribLocation(program, 'aColor'); pointSizeLocation = gl.getUniformLocation(program, 'uPointSize'); status.hidden = true; resize();
     };
     fetch('/data/lake-lure-debris.json').then(response => { if (!response.ok) throw new Error('CAP point cloud could not be loaded'); return response.json(); }).then(setup).catch(error => { status.textContent = 'The optimized CAP point cloud is temporarily unavailable.'; console.error(error); });
@@ -51,4 +54,8 @@
     canvas.addEventListener('dblclick', () => { yaw = 0.55; pitch = 0.22; distance = 2.2; });
     window.addEventListener('resize', resize);
   }
+  const root = document.querySelector('.debris-viewer');
+  const canvas = root?.querySelector<HTMLCanvasElement>('[data-debris-canvas]');
+  const status = root?.querySelector<HTMLElement>('[data-debris-status]');
+  if (canvas && status) initialize(canvas, status);
 </script>

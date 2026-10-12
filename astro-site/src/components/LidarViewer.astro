@@ -12,15 +12,15 @@
   <noscript><p class="pending-note">Enable JavaScript to explore the interactive visualization. The supplied surveys use NAD83(2011) / North Carolina (ftUS) with NAVD88 heights.</p></noscript>
 </section>
 <script>
-  const root = document.querySelector('[data-lidar-viewer]');
-  if (root) {
-    const canvas = root.querySelector('[data-lidar-canvas]');
-    const ctx = canvas.getContext('2d');
-    const status = root.querySelector('[data-lidar-status]');
-    let data;
-    const selectedData = () => data.series[0];
+  type TransectData = { series: { transectPoints: number[][] }[] };
+  function initialize(canvas: HTMLCanvasElement, status: HTMLElement) {
+    const context = canvas.getContext('2d');
+    if (!context) { status.textContent = 'The transect viewer requires canvas support.'; return; }
+    const ctx = context;
+    let data: TransectData | undefined;
     const resize = () => { const ratio = Math.min(window.devicePixelRatio || 1, 2); const box = canvas.getBoundingClientRect(); canvas.width = box.width * ratio; canvas.height = box.height * ratio; ctx.setTransform(ratio,0,0,ratio,0,0); draw(); };
     const drawTransects = () => {
+      if (!data) return;
       const box = canvas.getBoundingClientRect(), width = box.width, height = box.height;
       ctx.fillStyle = '#071521'; ctx.fillRect(0,0,width,height);
       const pad = { left: 58, right: 22, top: 28, bottom: 34 }, gap = 25;
@@ -52,4 +52,8 @@
     }).catch(error => { status.textContent = 'The optimized LiDAR visualization is temporarily unavailable.'; console.error(error); });
     window.addEventListener('resize', resize);
   }
+  const root = document.querySelector('[data-lidar-viewer]');
+  const canvas = root?.querySelector<HTMLCanvasElement>('[data-lidar-canvas]');
+  const status = root?.querySelector<HTMLElement>('[data-lidar-status]');
+  if (canvas && status) initialize(canvas, status);
 </script>
