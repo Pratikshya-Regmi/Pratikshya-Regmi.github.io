@@ -16,7 +16,7 @@ Participating in hackathons has allowed me to step out of my comfort zone, apply
 
 We built a reproducible ML pipeline linking **climate & soil variables** to **NC crop outcomes**. The sprint covered rapid EDA, feature engineering, and model comparisons (baselines → **Random Forest/XGBoost**) with clear explainability to surface key drivers of yield and resilience. We wrapped results into concise visuals and takeaways for growers and researchers.
 
-**Hackathon article — link to be added.**
+[Read the NC State hackathon article](https://cnr.ncsu.edu/geospatial/news/2025/10/09/hacking-climate-and-soil-data-for-north-carolinas-crops/)
 
 [Explore the 2025 project repository](https://github.com/Pratikshya-Regmi/PSI_Grow_Thy_HackPack).
 
