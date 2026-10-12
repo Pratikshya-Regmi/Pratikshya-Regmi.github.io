@@ -1,0 +1,6 @@
+{
+  "lidar": { "status": "awaiting-upload", "label": "LiDAR visualization — data upload pending", "description": "An interactive view of the original survey will appear here after the LAS files are supplied and processed.", "source": null, "crs": null, "verticalDatum": null, "units": null, "acquisitionDate": null, "attribution": null },
+  "hometown": "Hometown — location to be added",
+  "materials": "Poster / slides — upload pending",
+  "permissions": "User approved existing research material for public presentation on 2026-09-16. Do not infer missing results."
+}

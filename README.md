@@ -1,4 +1,60 @@
-# Beautiful Jekyll
+# Pratikshya Regmi — geospatial portfolio
+
+The new static Astro portfolio is in `astro-site/`. The original Beautiful Jekyll implementation remains at the repository root for recovery. The migration started from commit `3f90ac2` on branch `migration/astro-portfolio`.
+
+## Build and preview
+
+Use Node.js 22.12 or newer (Node 22 is used by CI).
+
+```sh
+cd astro-site
+npm ci
+npm run check
+npm run build
+npm run preview
+```
+
+`npm run dev` starts development. The production build checks internal links and prevents known private text, raw LiDAR, and source files from entering the output. Only `astro-site/dist/` is deployed. Astro telemetry can be disabled with `ASTRO_TELEMETRY_DISABLED=1`.
+
+On this Windows workspace, `powershell -ExecutionPolicy Bypass -File .\astro-site\preview.ps1` from the repository root previews the existing build, using installed Node or the workspace-local portable Node if needed. It does not install packages or deploy anything.
+
+## Navigation and content organization
+
+The approved seven destinations are About (`/`), Education, Work & Research, Honors & Awards, Community & Outreach, CV, and Contact. Work & Research has secondary links to Experience, Projects, Presentations, Workshops, Publications, Hackathons (within Projects), and Certifications (within Experience). Community combines volunteering, service, media features, and GeoGiggles.
+
+Edit `astro-site/src/data/navigation.json` for navigation and `redirects.json` for legacy route mappings. Old slash, extensionless and `.html` routes remain usable; only canonical content pages enter the sitemap. The independent CV page is `/cv/`; compatible PDF asset paths remain unchanged.
+
+The About biography lives in `src/content/pages/about.md`. Highlights use `reference` fields to point to canonical activities; related projects/publications use `related` links. Workshop media links come from workshop records. Keep facts in these records rather than duplicating them in page components. Outstanding content decisions are recorded in `src/data/confirmations.json`, with existing location and LiDAR placeholders in `locations.json` and `pending.json`.
+
+With the production preview running, `node scripts/architecture-check.mjs` checks the seven-item navigation, legacy URLs, mobile submenu, project filters, CV download and education timeline. Use `node scripts/browser-check.mjs` for responsive/accessibility checks and `node scripts/map-check.mjs` for map failure behavior. See `docs/information-architecture-validation.md` for this restructuring's results.
+
+## Update content
+
+Edit Markdown records in `astro-site/src/content/`. Collections validate titles, summaries, source provenance, ordering, links, image descriptions, and pending materials. Profile, location coordinates, and upload placeholders are in `astro-site/src/data/`. Confirmed current status is fourth-year Ph.D. candidate, Center for Geospatial Analytics, NCSU, started fall 2023.
+
+LiDAR is intentionally a clear placeholder until actual LAS files arrive. Do not add synthetic points. Follow `docs/astro-migration-plan.md` for inspection, metadata, public subset selection, reproducible conversion, accuracy checks, static fallbacks, and loading budgets. Missing posters, photographs, and links are labeled on the appropriate pages. Hometown and unconfirmed university markers remain placeholders.
+
+Both tracked PDFs in root `assets/` have been replaced with permanently redacted public-safe versions, identical to the copies in `astro-site/public/assets/`. The preserved Jekyll source must also remain public-safe. No private originals or backups are retained in the working tree or copied to another location. The earlier versions remain in Git history, which has not been rewritten. To regenerate public copies, install PyMuPDF and run `python astro-site/scripts/sanitize_documents.py` from the repository root; verify both extracted text and rendered output. Run `python astro-site/scripts/privacy-audit.py` for the whole-working-tree audit, which reads the baseline documents into memory without writing or displaying sensitive values. The one-time content import script requires BeautifulSoup, PyYAML, and Pillow. It is an audit/recovery tool, not part of normal builds; rerunning it overwrites migrated records.
+
+## GitHub Pages
+
+In repository Settings → Pages, select **GitHub Actions** at cutover. The Astro workflow checks pull requests and deploys only `master` (or manual dispatch from `master`). It uses `site: https://pratikshya-regmi.github.io`, `base: /`, static output, and the `github-pages` environment. Branch previews do not deploy production. The old Jekyll workflow is manual-only and produces a review artifact rather than deploying.
+
+Original page URLs, including capitalized `/Publications`, remain reachable through retained pages or explicit redirects. `.html` compatibility pages redirect to canonical directory routes; these are static HTML redirects, not server HTTP 301s. The empty legacy feed and tags route remain compatible. Valid image URLs and PDF names are preserved.
+
+No live settings are changed by local edits. Review the built preview before merging. For recovery, the original source is available at the baseline commit, but do not redeploy its original PDFs containing private contact information. Retain sanitized documents in any rollback artifact. Prior public Git history is not rewritten by this migration.
+
+## Dependencies and validation
+
+Astro provides static HTML and validated content; Zod defines collection schemas, and Leaflet is dynamically loaded only after a map request. Map tiles use attributed OpenStreetMap tiles without prefetch/offline downloads. No analytics, cookies, form processors, or tracking pixels are added. Three.js is deferred until actual LiDAR data are available, avoiding an unused rendering payload. Playwright, axe, and Lighthouse are development-only verification tools.
+
+Run browser checks with `node scripts/browser-check.mjs` from `astro-site/` while the production preview runs at `http://localhost:4321`. Install the Playwright Chromium browser first with `npx playwright install chromium`. Reports and screenshots go into ignored `test-results/`.
+
+See `docs/astro-migration-plan.md` for the architecture and preservation inventory, and `docs/astro-validation.md` for actual verification results and remaining content gaps.
+
+---
+
+# Original Beautiful Jekyll documentation
 
 [![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
 
@@ -237,3 +293,6 @@ This template was not made *entirely* from scratch. I'd like to give special tha
 
 I'd also like to thank [Dr. Jekyll's Themes](https://drjekyllthemes.github.io/), [Jekyll Themes](http://jekyllthemes.org/), and another [Jekyll Themes](http://jekyllrc.github.io/jekyllthemes/) for featuring Beautiful Jekyll in their Jekyll theme directories.
 
+### Personal journey map
+
+The About page includes a satellite-and-terrain journey from Nepal to NC State, with a separate ORNL research stop. See [journey map editing and photo instructions](docs/journey-map.md). Public location records are shared with Education; the original KML and precise home location are not published.

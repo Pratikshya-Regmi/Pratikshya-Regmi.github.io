@@ -1,0 +1,18 @@
+{
+  "hometown": "City-level hometown needed",
+  "universityCoordinates": [
+    "TAMUCC",
+    "Kathmandu University"
+  ],
+  "dates": {
+    "itre": "CV and resume disagree",
+    "cbiScholarship": "2022 in CV; 2021 in resume"
+  },
+  "documents": "Existing sanitized editions; academic dates need reconciliation",
+  "credentials": "Individual credential URLs missing; existing CV/resume source retained",
+  "research": "LiDAR data, survey metadata, quantitative figures, specific individual hackathon roles and some presentation materials remain pending",
+  "contact": "Use preferred NCSU email consistently; legacy GeoGiggles Gmail not displayed",
+  "media": "Confirm CSDMS 2025 highlight photo; original STEM update and PSI article missing",
+  "privacy": "Prior audit reports sensitive historical PDFs; history cleanup has not been performed",
+  "ornlProject": "Internship and project title confirmed by user; study area, actual acquisition dates, specific methods, supervisor and results not supplied. Figure is conceptual."
+}

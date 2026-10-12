@@ -1,0 +1,56 @@
+name: Astro portfolio
+on:
+  pull_request:
+    paths: ['astro-site/**', '.github/workflows/astro-pages.yml']
+  push:
+    branches: [master]
+    paths: ['astro-site/**', '.github/workflows/astro-pages.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: astro-pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: astro-site
+    env:
+      ASTRO_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: astro-site/package-lock.json
+      - run: npm ci
+      - run: npm run check
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install pymupdf==1.28.2
+      - run: python scripts/check-pdf-privacy.py
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: astro-site/dist
+  deploy:
+    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy static portfolio
+        id: deployment
+        uses: actions/deploy-pages@v4

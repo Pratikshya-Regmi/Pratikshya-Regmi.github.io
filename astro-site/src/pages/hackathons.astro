@@ -1,0 +1,10 @@
+---
+import {getCollection} from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Records from '../components/Records.astro';
+const hackathons=(await getCollection('engagement')).filter(entry=>entry.id==='hackathon');
+---
+<Base title="Hackathons" description="Interdisciplinary hackathons applying geospatial, artificial intelligence, and data science methods.">
+<header class="page-head"><span class="eyebrow">Hackathons</span><h1>Fast-moving ideas,<br/>built together.</h1><p>Hackathons have helped me apply geospatial and AI methods in new settings, collaborate across disciplines, and communicate technical results under real project constraints.</p></header>
+<div class="page-body"><Records entries={hackathons} hideTitle/></div>
+</Base>

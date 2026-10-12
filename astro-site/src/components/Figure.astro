@@ -1,0 +1,11 @@
+---
+import images from '../data/images.json';
+interface Props { src: string; alt: string; caption?: string; eager?: boolean; cover?: boolean; }
+const {src,alt,caption,eager=false,cover=false}=Astro.props;
+type Variant={src:string;width:number;height:number};
+const info = (images as Record<string,{width:number;height:number;variants:Variant[];covers?:Variant[]}>)[src];
+const available=cover && info?.covers ? info.covers : info?.variants;
+const selected=available?.[1];
+const variants=available?.filter((v,i,list)=>list.findIndex(other=>other.width===v.width)===i);
+---
+<figure><img src={selected?.src ?? src} srcset={variants?.map(v=>`${v.src} ${v.width}w`).join(', ')} sizes="(max-width: 700px) 90vw, 42vw" width={selected?.width ?? info?.width} height={selected?.height ?? info?.height} alt={alt} loading={eager?'eager':'lazy'} decoding="async" fetchpriority={eager?'high':'auto'}/>{caption && <figcaption>{caption}</figcaption>}</figure>

@@ -11,3 +11,9 @@ ehthumbs.db
 Gemfile.lock
 
 beautiful-jekyll-theme-*.gem
+# Local tools and Astro build outputs
+.tools/
+astro-site/node_modules/
+astro-site/dist/
+astro-site/.astro/
+astro-site/test-results/

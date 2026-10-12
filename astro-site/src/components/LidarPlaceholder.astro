@@ -1,0 +1,10 @@
+---
+import pending from '../data/pending.json';
+const { detailed = false } = Astro.props;
+---
+<aside class:list={['placeholder', { 'lidar-placeholder': detailed }]} aria-label="LiDAR visualization status">
+  <span class="eyebrow">{detailed ? 'Interactive survey / coming next' : 'LiDAR / awaiting data'}</span>
+  <h2 class="placeholder-title">{pending.lidar.label}</h2>
+  <p>{pending.lidar.description}</p>
+  {detailed && <><p>The planned viewer will support orbit, pan, zoom, reset, and a static figure with a written description.</p><dl class="metadata"><dt>Acquisition date</dt><dd>To be supplied</dd><dt>Coordinate system & vertical datum</dt><dd>To be supplied</dd><dt>Units & data attribution</dt><dd>To be supplied</dd></dl></>}
+</aside>
