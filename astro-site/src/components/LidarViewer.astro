@@ -1,0 +1,55 @@
+<section class="lidar-viewer" data-lidar-viewer aria-labelledby="lidar-viewer-title">
+  <div class="lidar-viewer-heading">
+    <div>
+      <span class="eyebrow">LiDAR transect series</span>
+      <h2 id="lidar-viewer-title">A forest transect before and after Helene, Woodfin, North Carolina.</h2>
+    </div>
+  </div>
+  <div class="lidar-stage">
+    <canvas data-lidar-canvas aria-label="Interactive LiDAR transect visualization"></canvas>
+    <p class="lidar-loading" data-lidar-status role="status">Loading optimized survey data…</p>
+  </div>
+  <noscript><p class="pending-note">Enable JavaScript to explore the interactive visualization. The supplied surveys use NAD83(2011) / North Carolina (ftUS) with NAVD88 heights.</p></noscript>
+</section>
+<script>
+  const root = document.querySelector('[data-lidar-viewer]');
+  if (root) {
+    const canvas = root.querySelector('[data-lidar-canvas]');
+    const ctx = canvas.getContext('2d');
+    const status = root.querySelector('[data-lidar-status]');
+    let data;
+    const selectedData = () => data.series[0];
+    const resize = () => { const ratio = Math.min(window.devicePixelRatio || 1, 2); const box = canvas.getBoundingClientRect(); canvas.width = box.width * ratio; canvas.height = box.height * ratio; ctx.setTransform(ratio,0,0,ratio,0,0); draw(); };
+    const drawTransects = () => {
+      const box = canvas.getBoundingClientRect(), width = box.width, height = box.height;
+      ctx.fillStyle = '#071521'; ctx.fillRect(0,0,width,height);
+      const pad = { left: 58, right: 22, top: 28, bottom: 34 }, gap = 25;
+      const panelHeight = (height - pad.top - pad.bottom - gap) / 2;
+      const maxHeight = Math.max(...data.series.flatMap(item => item.transectPoints.map(point => point[1])), 0.6);
+      data.series.forEach((item, panel) => {
+        const top = pad.top + panel * (panelHeight + gap);
+        ctx.strokeStyle = '#294456'; ctx.lineWidth = 1;
+        [0, .5, 1].forEach(value => { const y = top + panelHeight - value * panelHeight; ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(width - pad.right, y); ctx.stroke(); });
+        ctx.fillStyle = '#f2f2e9'; ctx.font = '600 14px Arial'; ctx.fillText(panel === 0 ? '2018 · before Helene' : '2024 · after Helene', pad.left, top - 9);
+        ctx.fillStyle = '#b2b8af'; ctx.font = '11px Arial'; ctx.fillText('relative height', 8, top + panelHeight / 2);
+        item.transectPoints.forEach(point => {
+          const x = pad.left + point[0] * (width - pad.left - pad.right);
+          const y = top + panelHeight - (point[1] / maxHeight) * panelHeight;
+          ctx.fillStyle = point[2] === 5 ? '#db2863' : point[2] === 2 ? '#2d7bd5' : '#84c5bb';
+          ctx.globalAlpha = point[2] === 5 || point[2] === 2 ? .82 : .45;
+          ctx.fillRect(x, y, 1.7, 1.7);
+        });
+      });
+      ctx.globalAlpha = 1; ctx.fillStyle = '#b2b8af'; ctx.font = '11px Arial'; ctx.fillText('west', pad.left, height - 10); ctx.fillText('east', width - pad.right - 22, height - 10);
+    };
+    const draw = () => { if (!data) return; drawTransects(); };
+    const update = () => {
+      draw();
+    };
+    fetch('/data/lidar-transects.json').then(response => { if (!response.ok) throw new Error('LiDAR dataset could not be loaded'); return response.json(); }).then(json => {
+      data = json; status.hidden = true;
+      update(); resize();
+    }).catch(error => { status.textContent = 'The optimized LiDAR visualization is temporarily unavailable.'; console.error(error); });
+    window.addEventListener('resize', resize);
+  }
+</script>

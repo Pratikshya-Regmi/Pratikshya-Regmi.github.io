@@ -1,0 +1,80 @@
+[
+  {
+    "id": "ncsu",
+    "label": "North Carolina State University",
+    "context": "Current campus · Ph.D., fall 2023–present",
+    "city": "Raleigh, North Carolina",
+    "lat": 35.78181,
+    "lng": -78.6765,
+    "source": "User-provided My_places.kml",
+    "precision": "Campus location",
+    "education": true
+  },
+  {
+    "id": "tamucc",
+    "label": "Texas A&M University-Corpus Christi",
+    "context": "M.S., 2023",
+    "city": "Corpus Christi, Texas",
+    "lat": 27.71374,
+    "lng": -97.32482,
+    "source": "User-provided My_places.kml",
+    "precision": "Campus location",
+    "education": true
+  },
+  {
+    "id": "kathmandu",
+    "label": "Kathmandu University",
+    "context": "B.E., 2018",
+    "city": "Dhulikhel, Nepal",
+    "lat": 27.61929,
+    "lng": 85.53878,
+    "source": "User-provided My_places.kml",
+    "precision": "Campus location",
+    "education": true
+  },
+  {
+    "id": "home",
+    "label": "Jaljala–5, Parbat",
+    "city": "Nepal",
+    "context": "Where my journey began",
+    "lng": 83.59,
+    "lat": 28.35,
+    "source": "User-provided My_places.kml; public center rounded to 0.01 degrees; place name confirmed by user",
+    "precision": "Approximate village area · 1 km radius",
+    "education": false,
+    "areaRadiusKm": 1
+  },
+  {
+    "id": "beni",
+    "label": "Beni Horizon Academy",
+    "city": "Nepal",
+    "context": "Childhood school",
+    "lng": 83.57024,
+    "lat": 28.34249,
+    "source": "User-provided My_places.kml",
+    "precision": "Institution location",
+    "education": false
+  },
+  {
+    "id": "capitol",
+    "label": "Capitol Hill Academy",
+    "city": "Nepal",
+    "context": "High school",
+    "lng": 85.30327,
+    "lat": 27.69601,
+    "source": "User-provided My_places.kml",
+    "precision": "Institution location",
+    "education": false
+  },
+  {
+    "id": "ornl",
+    "label": "Oak Ridge National Laboratory",
+    "city": "Oak Ridge, Tennessee",
+    "context": "Summer research internship",
+    "lng": -84.31209,
+    "lat": 35.92972,
+    "source": "User-provided My_places.kml",
+    "precision": "Institution location",
+    "education": false
+  }
+]

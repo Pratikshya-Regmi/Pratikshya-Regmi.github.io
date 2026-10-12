@@ -1,0 +1,88 @@
+[
+  {
+    "page": "/",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "issues": [
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "score": 0.99,
+        "displayValue": "1.7Â s"
+      },
+      {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "score": 0.99,
+        "displayValue": "70Â ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "score": 0.53,
+        "displayValue": "240Â ms"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "score": 0,
+        "displayValue": "Est savings of 64Â KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0,
+        "displayValue": "Est savings of 150Â ms"
+      }
+    ]
+  },
+  {
+    "page": "/projects/helene/",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "issues": [
+      {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "score": 0.94,
+        "displayValue": "150Â ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "score": 0.41,
+        "displayValue": "280Â ms"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "score": 0.5,
+        "displayValue": "Est savings of 57Â KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0,
+        "displayValue": "Est savings of 140Â ms"
+      }
+    ]
+  }
+]

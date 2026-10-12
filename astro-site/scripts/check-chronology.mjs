@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {newestFirst} from '../src/utils/chronology.ts';
+const entry = (date, order=0) => ({data:{date,order}});
+const dates = ['2021','May – August 2026','2023 – present','August 2024','2023, 2022, 2021',undefined];
+assert.deepEqual(dates.map(d=>entry(d)).sort(newestFirst).map(e=>e.data.date), ['2023 – present','May – August 2026','August 2024','2023, 2022, 2021','2021',undefined]);
+assert(newestFirst(entry('2025–present'),entry('2024–present'))<0);
+assert(newestFirst(entry('May 2025'),entry('February 2025'))<0);
+assert(newestFirst(entry('2025',1),entry('2025',2))<0);
+assert(newestFirst(entry('July 2014 – December 2018'),entry('2023'))>0);
+console.log('Chronology checks passed: ongoing roles, ranges, months, recurring awards, ties and missing dates.');

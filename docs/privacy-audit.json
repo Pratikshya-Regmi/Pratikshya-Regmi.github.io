@@ -1,0 +1,26 @@
+{
+  "scope": "All current working-tree files, including ignored tools, dependencies, build output, and caches. .git is history, checked separately in memory.",
+  "files_scanned": 29136,
+  "pdfs_decoded": 6,
+  "findings": [],
+  "scan_errors": [],
+  "documents": {
+    "CV_PR.pdf": {
+      "identical_public_copies": true
+    },
+    "Pratikshya_Resume_oct025.pdf": {
+      "identical_public_copies": true
+    }
+  },
+  "history": [
+    {
+      "file": "assets/CV_PR.pdf",
+      "sensitive_content_in_baseline_history": true
+    },
+    {
+      "file": "assets/Pratikshya_Resume_oct025.pdf",
+      "sensitive_content_in_baseline_history": true
+    }
+  ],
+  "private_backup_created": false
+}

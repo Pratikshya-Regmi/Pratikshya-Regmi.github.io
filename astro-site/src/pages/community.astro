@@ -1,0 +1,10 @@
+---
+import {newestFirst} from '../utils/chronology';
+import Base from '../layouts/Base.astro';
+import Records from '../components/Records.astro';
+import {getCollection} from 'astro:content';
+const workshops=(await getCollection('workshops')).sort(newestFirst);
+const community=await getCollection('engagement');
+const highlights=(await getCollection('highlights')).filter(h=>h.id==='highlight-1');
+---
+<Base title="Community & Outreach" description="Geospatial outreach, professional service, open-source contribution, media features, and GeoGiggles."><header class="page-head"><span class="eyebrow">Community & Outreach</span><h1>Science grows<br/>when we share it.</h1><p>Professional service, open-source contribution, community engagement, and a little geospatial humor.</p><nav class="section-links" aria-label="Community sections"><a href="#volunteering-service">Volunteering and Service</a><a href="#media-features">Media and Features</a><a href="#geogiggles">GeoGiggles</a></nav></header><div class="page-body"><section id="volunteering-service"><h2>Volunteering and Service</h2><Records entries={community.filter(e=>['volunteer','service'].includes(e.id))} heading="h3"/><Records entries={highlights} heading="h3"/></section><section id="media-features" class="subsection"><h2>Media and Features</h2><p>Workshop stories and ways to follow my geospatial work.</p><div class="work-index">{workshops.map(w=>w.data.links.filter(l=>l.label==='NC State workshop feature').map(link=><a href={link.url}>{w.data.date} · {w.data.title} · NC State feature ↗</a>))}<a href="/workshops/">Workshops I delivered and learning materials ↗</a><a href="https://www.linkedin.com/in/pratiregmi/">LLM tutorials and updates on LinkedIn ↗</a><a href="https://www.youtube.com/@pratikshyaregmi2961">YouTube channel ↗</a></div></section><section id="geogiggles" class="subsection"><h2>GeoGiggles</h2><Records entries={community.filter(e=>e.id==='geogiggles')} hideTitle/></section></div></Base>

@@ -1,0 +1,15 @@
+---
+import {getCollection} from 'astro:content';
+import {newestFirst} from '../utils/chronology';
+import Figure from './Figure.astro';
+let projects=(await getCollection('projects')).sort(newestFirst);
+const { heading = 'h3', limit, filters = false } = Astro.props;
+if(limit) projects=projects.slice(0,limit);
+const tags=[...new Set(projects.flatMap(p=>p.data.tags))];
+const Heading = heading;
+---
+<div data-projects>{filters && <div class="filter-tools" hidden aria-label="Filter projects"><button aria-pressed="true" data-filter="All">All projects</button>{tags.map(tag=><button aria-pressed="false" data-filter={tag}>{tag}</button>)}</div>}<div class="project-list">{projects.map((project,index)=><article class:list={["project-row",{"additional-project":filters && index>1,"text-project":project.data.imagePlacement==='detail'}]} data-tags={JSON.stringify(project.data.tags)}>{project.data.imagePlacement!=='detail' && <a class="project-image" href={`/projects/${project.id}/`} tabindex="-1" aria-hidden="true"><Figure src={project.data.image!} alt="" cover/></a>}<div><span class="eyebrow">0{index+1} / {project.data.imagePlacement==='detail' ? 'Project' : project.data.tags.join(' · ')}</span><p class="caption">{project.data.date}</p><Heading class="project-title"><a href={`/projects/${project.id}/`}>{project.data.title} <span aria-hidden="true">↗</span></a></Heading><p>{project.data.summary}</p>{project.data.imagePlacement!=='detail' && <span class="caption">{project.data.caption ?? 'Associated research presentation photograph'}</span>}</div></article>)}</div>
+</div>
+<script>
+document.querySelectorAll<HTMLElement>('[data-projects]').forEach(group=>{const filters=group.querySelector<HTMLElement>('.filter-tools');if(!filters)return;filters.hidden=false;filters.querySelectorAll<HTMLButtonElement>('button').forEach(button=>button.addEventListener('click',()=>{filters.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));group.querySelectorAll<HTMLElement>('[data-tags]').forEach(row=>row.hidden=button.dataset.filter!=='All'&&!JSON.parse(row.dataset.tags!).includes(button.dataset.filter));}));});
+</script>

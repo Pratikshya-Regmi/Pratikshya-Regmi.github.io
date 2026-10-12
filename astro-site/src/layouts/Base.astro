@@ -1,0 +1,30 @@
+---
+import '../styles/global.css';
+import profile from '../data/profile.json';
+import researchOverview from '../data/research.json';
+const { title, description = researchOverview.description, canonical = Astro.url.pathname } = Astro.props;
+import navigation from '../data/navigation.json';
+const nav = navigation.primary;
+const url = new URL(canonical, Astro.site);
+---
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>{title} · Pratikshya Regmi</title><meta name="description" content={description}/><meta name="theme-color" content="#050505"/>
+<link rel="canonical" href={url}/><link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<meta property="og:title" content={`${title} · Pratikshya Regmi`}/><meta property="og:description" content={description}/><meta property="og:type" content="website"/><meta property="og:url" content={url}/><meta property="og:image" content={new URL('/media/cover-960.webp',Astro.site)}/><meta name="twitter:card" content="summary_large_image"/>
+<script is:inline type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@type':'Person',name:profile.name,url:Astro.site?.href,jobTitle:profile.title,affiliation:{'@type':'Organization',name:profile.institution},sameAs:[profile.github,profile.linkedin]})}/>
+</head><body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">PR<span>↗</span></span><span>Pratikshya<br/><small>REGMI</small></span></a>
+<nav aria-label="Main navigation"><details class="mobile-nav"><summary>Menu <span aria-hidden="true">+</span></summary><div class="mobile-links">{nav.map(([label,href])=><a href={href} target={href === "/cv/" ? "_blank" : undefined} rel={href === "/cv/" ? "noopener noreferrer" : undefined} aria-current={Astro.url.pathname===href?'page':undefined}>{label}</a>)}</div></details>
+<div class="desktop-nav">{nav.map(([label,href])=><a href={href} target={href === "/cv/" ? "_blank" : undefined} rel={href === "/cv/" ? "noopener noreferrer" : undefined} aria-current={Astro.url.pathname===href?'page':undefined}>{label}</a>)}</div></nav></header>
+
+<main id="main" tabindex="-1"><slot/></main>
+<footer><div><span class="eyebrow">Let's connect</span><h2>Good questions lead<br/>to new perspectives.</h2><a class="text-link" href={`mailto:${profile.email}`}>{profile.email} ↗</a></div><div class="footer-links"><a href={profile.github}>GitHub ↗</a><a href={profile.linkedin}>LinkedIn ↗</a><a href="/cv/" target="_blank" rel="noopener noreferrer">CV & résumé ↗</a><span>Raleigh, North Carolina</span></div><div class="footer-bottom"><span>© {new Date().getFullYear()} Pratikshya Regmi</span><span>Field meets data science.</span><a href="#main">Back to top ↑</a></div></footer>
+<script>
+document.querySelectorAll<HTMLDetailsElement>('header details').forEach(menu => {
+ menu.addEventListener('keydown',event=>{if(event.key==='Escape'){menu.open=false;menu.querySelector('summary')?.focus();}});
+ document.addEventListener('click',event=>{if(!menu.contains(event.target as Node))menu.open=false;});
+});
+</script>
+</body></html>

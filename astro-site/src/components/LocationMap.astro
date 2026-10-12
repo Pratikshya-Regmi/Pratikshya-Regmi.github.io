@@ -1,0 +1,44 @@
+---
+import locations from '../data/locations.json';
+import 'leaflet/dist/leaflet.css';
+const { education = false } = Astro.props;
+const items = education ? locations.filter(place=>place.education) : locations.filter(place=>place.id==='ncsu');
+---
+<section class="map-shell" aria-label={education?'University locations':'Current location'} data-location-map data-locations={JSON.stringify(items)}>
+<span class="eyebrow">{education?'Places of learning':'Current campus'}</span>
+{items.map(item=><p><strong>{item.label}</strong> · {item.city}<br/><small>{item.context} · {item.precision}</small></p>)}
+{!education && <p class="pending-note">Hometown — location to be added</p>}
+<button class="button secondary" data-map-open>Explore campus map ↗</button>
+<p class="map-status" role="status">The interactive map loads on request. Location information is also listed above.</p>
+<div class="map-canvas" hidden aria-label="Interactive university map"></div><div class="map-locations"></div>
+</section>
+<script>
+document.querySelectorAll<HTMLElement>('[data-location-map]').forEach(shell=>{
+ const button=shell.querySelector<HTMLButtonElement>('[data-map-open]')!;
+ button.addEventListener('click',async()=>{
+  button.disabled=true;
+  const status=shell.querySelector<HTMLElement>('[role=status]')!;
+  const canvas=shell.querySelector<HTMLElement>('.map-canvas')!;
+  try {
+   status.textContent='Loading map…';
+   const L=await import('leaflet');
+   const items=JSON.parse(shell.dataset.locations!).filter((x:any)=>x.lat!==null && x.lng!==null);
+   canvas.hidden=false;
+   const map=L.map(canvas,{scrollWheelZoom:false,dragging:!L.Browser.mobile,tapHold:false}).setView([items[0].lat,items[0].lng],12);
+   const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+   tiles.on('tileerror',()=>{status.textContent='Map tiles could not load. All location information remains available above.';});
+   const markers = new Map<string, any>();
+   for(const item of items){
+    const label=document.createElement('div'); label.textContent=`${item.label} — ${item.context}`;
+    const marker=L.marker([item.lat,item.lng],{title:item.label,alt:item.label,icon:L.divIcon({className:'map-marker',iconSize:[20,20]})}).addTo(map).bindPopup(label);
+    const control=document.createElement('button');control.textContent=item.label;control.addEventListener('click',()=>{map.setView([item.lat,item.lng],12,{animate:false});marker.openPopup();});shell.querySelector('.map-locations')!.append(control);
+    markers.set(item.id,marker);
+    marker.on('add',()=>marker.getElement()?.addEventListener('focus',()=>marker.openPopup()));
+    marker.getElement()?.addEventListener('focus',()=>marker.openPopup());
+   }
+   status.textContent='Map loaded. Use the named campus button or marker. Page scrolling remains available.';
+   button.hidden=true;
+  }catch{canvas.hidden=true;status.textContent='Map unavailable. Please use the location information above.';button.disabled=false;button.textContent='Retry map';}
+ });
+});
+</script>

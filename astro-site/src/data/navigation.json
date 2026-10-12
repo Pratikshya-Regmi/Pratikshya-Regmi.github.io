@@ -1,0 +1,48 @@
+{
+  "primary": [
+    [
+      "About",
+      "/"
+    ],
+    [
+      "Education",
+      "/education/"
+    ],
+    [
+      "Work & Experiences",
+      "/work-research/"
+    ],
+    [
+      "Research Communication",
+      "/research-communication/"
+    ],
+    [
+      "Visualization",
+      "/visualization/"
+    ],
+    [
+      "Hackathons",
+      "/hackathons/"
+    ],
+    [
+      "Honors & Awards",
+      "/honors/"
+    ],
+    [
+      "Community & Outreach",
+      "/community/"
+    ],
+    [
+      "Certifications",
+      "/certifications/"
+    ],
+    [
+      "CV & Resume",
+      "/cv/"
+    ],
+    [
+      "Contact",
+      "/contact/"
+    ]
+  ]
+}

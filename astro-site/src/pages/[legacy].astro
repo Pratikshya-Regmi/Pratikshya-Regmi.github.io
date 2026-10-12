@@ -1,0 +1,6 @@
+---
+import redirects from '../data/redirects.json';
+export function getStaticPaths(){return Object.entries(redirects).map(([legacy,target])=>({params:{legacy},props:{target}}));}
+const {target}=Astro.props;
+---
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width"/><title>Page moved · Pratikshya Regmi</title><link rel="canonical" href={new URL(target.split('#')[0],Astro.site)}/><meta http-equiv="refresh" content={`0;url=${target}`}/></head><body><p>This page has moved. <a href={target}>Continue to the updated section</a>.</p><script is:inline define:vars={{target}}>const fragment=location.hash;location.replace(fragment ? target.split('#')[0]+fragment : target);</script></body></html>

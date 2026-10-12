@@ -1,0 +1,172 @@
+{
+  "title": "From Nepal to North Carolina",
+  "chapters": [
+    {
+      "locationId": "home",
+      "stage": "Roots",
+      "story": "My journey began in Jaljala–5, Parbat, Nepal.",
+      "zoom": 12,
+      "bearing": 15,
+      "branch": false,
+      "record": null,
+      "photos": [
+        {
+          "src": "/assets/journey/home-rainbow.webp",
+          "alt": "A rainbow over houses and green hills in Jaljala-5, Parbat.",
+          "caption": "A rainbow at home.",
+          "width": 1200,
+          "height": 540
+        },
+        {
+          "src": "/assets/journey/home-landscape.webp",
+          "alt": "Hills, trees and scattered houses beneath clouds in Jaljala-5, Parbat.",
+          "caption": "The landscape of Jaljala-5, Parbat.",
+          "width": 900,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "locationId": "beni",
+      "stage": "Childhood school",
+      "story": "My childhood school: Beni Horizon Academy.",
+      "zoom": 13.5,
+      "bearing": 20,
+      "branch": false,
+      "record": null,
+      "photos": [
+        {
+          "src": "/assets/journey/beni.webp",
+          "alt": "A group holding wrapped gifts outside Beni Horizon Academy.",
+          "caption": "Beni Horizon Academy.",
+          "width": 1200,
+          "height": 972
+        }
+      ]
+    },
+    {
+      "locationId": "capitol",
+      "stage": "High school",
+      "story": "The next chapter of my education: Capitol Hill Academy.",
+      "zoom": 13.5,
+      "bearing": -20,
+      "branch": false,
+      "record": null,
+      "photos": [
+        {
+          "src": "/assets/journey/capitol.webp",
+          "alt": "Three students in school uniforms standing in a classroom.",
+          "caption": "A memory from high school.",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "locationId": "kathmandu",
+      "stage": "Undergraduate studies",
+      "story": "Studying geomatics engineering at Kathmandu University.",
+      "zoom": 13.5,
+      "bearing": 30,
+      "branch": false,
+      "record": {
+        "collection": "education",
+        "id": "kathmandu",
+        "href": "/education/#kathmandu"
+      },
+      "photos": [
+        {
+          "src": "/assets/journey/kathmandu-graduation.webp",
+          "alt": "A graduate and a group outside the Kathmandu University building.",
+          "caption": "Graduation at Kathmandu University.",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "src": "/assets/journey/kathmandu-group.webp",
+          "alt": "A group jumping together with snow-covered mountains in the background.",
+          "caption": "A memory from my undergraduate years.",
+          "width": 1200,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "locationId": "tamucc",
+      "stage": "Master’s studies",
+      "story": "From Nepal to Texas, for graduate study in geospatial systems engineering.",
+      "zoom": 13.5,
+      "bearing": -25,
+      "branch": false,
+      "record": {
+        "collection": "education",
+        "id": "tamucc",
+        "href": "/education/#tamucc"
+      },
+      "photos": [
+        {
+          "src": "/assets/journey/texas-graduation.webp",
+          "alt": "A graduate holding a diploma tube in front of the Texas A&M University-Corpus Christi sign.",
+          "caption": "Graduation at Texas A&M-Corpus Christi.",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "src": "/assets/journey/texas-campus.webp",
+          "alt": "A graduate in cap and gown facing the Texas A&M-Corpus Christi campus.",
+          "caption": "Looking toward campus.",
+          "width": 900,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "locationId": "ncsu",
+      "stage": "Current Ph.D.",
+      "story": "My current research home at the Center for Geospatial Analytics.",
+      "zoom": 13.5,
+      "bearing": 20,
+      "branch": false,
+      "record": {
+        "collection": "education",
+        "id": "ncsu",
+        "href": "/education/#ncsu"
+      },
+      "photos": [
+        {
+          "src": "/assets/journey/ncsu.webp",
+          "alt": "A speaker at an NC State University podium with a projected map of Chimney Rock behind her.",
+          "caption": "Presenting at NC State.",
+          "width": 901,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "locationId": "ornl",
+      "stage": "Research stop · Summer 2026",
+      "story": "A summer research chapter at Oak Ridge National Laboratory.",
+      "zoom": 13.5,
+      "bearing": -15,
+      "branch": true,
+      "record": {
+        "collection": "experience",
+        "id": "ornl",
+        "href": "/experience/#ornl"
+      },
+      "photos": [
+        {
+          "src": "/assets/journey/ornl.webp",
+          "alt": "A person standing in front of the Oak Ridge National Laboratory entrance sign.",
+          "caption": "Oak Ridge National Laboratory.",
+          "width": 900,
+          "height": 1200
+        }
+      ]
+    }
+  ],
+  "pending": [
+    "Capitol Hill Academy is the user-supplied name; KML label is capitol Hill College.",
+    "School attendance dates have not been supplied."
+  ]
+}

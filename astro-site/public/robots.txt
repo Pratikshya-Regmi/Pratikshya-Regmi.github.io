@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pratikshya-regmi.github.io/sitemap.xml

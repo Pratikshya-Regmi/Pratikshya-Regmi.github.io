@@ -1,0 +1,674 @@
+{
+  "/assets/img/3mt.jpg": {
+    "width": 1201,
+    "height": 1600,
+    "variants": [
+      {
+        "src": "/media/3mt-480.webp",
+        "width": 360,
+        "height": 480
+      },
+      {
+        "src": "/media/3mt-960.webp",
+        "width": 721,
+        "height": 960
+      },
+      {
+        "src": "/media/3mt-1440.webp",
+        "width": 1081,
+        "height": 1440
+      }
+    ]
+  },
+  "/assets/img/404-southpark.jpg": {
+    "width": 750,
+    "height": 600,
+    "variants": [
+      {
+        "src": "/media/404-southpark-480.webp",
+        "width": 480,
+        "height": 384
+      },
+      {
+        "src": "/media/404-southpark-960.webp",
+        "width": 750,
+        "height": 600
+      },
+      {
+        "src": "/media/404-southpark-1440.webp",
+        "width": 750,
+        "height": 600
+      }
+    ]
+  },
+  "/assets/img/AGU.jpeg": {
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "src": "/media/AGU-480.webp",
+        "width": 480,
+        "height": 360
+      },
+      {
+        "src": "/media/AGU-960.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "src": "/media/AGU-1440.webp",
+        "width": 1440,
+        "height": 1080
+      }
+    ],
+    "covers": [
+      {
+        "src": "/media/AGU-cover-480.webp",
+        "width": 480,
+        "height": 300
+      },
+      {
+        "src": "/media/AGU-cover-800.webp",
+        "width": 800,
+        "height": 500
+      },
+      {
+        "src": "/media/AGU-cover-1200.webp",
+        "width": 1200,
+        "height": 750
+      }
+    ]
+  },
+  "/assets/img/agu1.jpg": {
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "src": "/media/agu1-480.webp",
+        "width": 480,
+        "height": 360
+      },
+      {
+        "src": "/media/agu1-960.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "src": "/media/agu1-1440.webp",
+        "width": 1440,
+        "height": 1080
+      }
+    ],
+    "covers": [
+      {
+        "src": "/media/agu1-cover-480.webp",
+        "width": 480,
+        "height": 300
+      },
+      {
+        "src": "/media/agu1-cover-800.webp",
+        "width": 800,
+        "height": 500
+      },
+      {
+        "src": "/media/agu1-cover-1200.webp",
+        "width": 1200,
+        "height": 750
+      }
+    ]
+  },
+  "/assets/img/avatar-icon.jpeg": {
+    "width": 900,
+    "height": 1600,
+    "variants": [
+      {
+        "src": "/media/avatar-icon-480.webp",
+        "width": 270,
+        "height": 480
+      },
+      {
+        "src": "/media/avatar-icon-960.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "src": "/media/avatar-icon-1440.webp",
+        "width": 810,
+        "height": 1440
+      }
+    ]
+  },
+  "/assets/img/avatar-icon.png": {
+    "width": 512,
+    "height": 512,
+    "variants": [
+      {
+        "src": "/media/avatar-icon-480.webp",
+        "width": 480,
+        "height": 480
+      },
+      {
+        "src": "/media/avatar-icon-960.webp",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "src": "/media/avatar-icon-1440.webp",
+        "width": 512,
+        "height": 512
+      }
+    ]
+  },
+  "/assets/img/bgimage.png": {
+    "width": 65,
+    "height": 65,
+    "variants": [
+      {
+        "src": "/media/bgimage-480.webp",
+        "width": 65,
+        "height": 65
+      },
+      {
+        "src": "/media/bgimage-960.webp",
+        "width": 65,
+        "height": 65
+      },
+      {
+        "src": "/media/bgimage-1440.webp",
+        "width": 65,
+        "height": 65
+      }
+    ]
+  },
+  "/assets/img/cnr.jpg": {
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/media/cnr-480.webp",
+        "width": 480,
+        "height": 320
+      },
+      {
+        "src": "/media/cnr-960.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/media/cnr-1440.webp",
+        "width": 800,
+        "height": 533
+      }
+    ]
+  },
+  "/assets/img/cnrsyposim1.jpg": {
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/media/cnrsyposim1-480.webp",
+        "width": 480,
+        "height": 320
+      },
+      {
+        "src": "/media/cnrsyposim1-960.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/media/cnrsyposim1-1440.webp",
+        "width": 800,
+        "height": 533
+      }
+    ]
+  },
+  "/assets/img/cover.jpg": {
+    "width": 1600,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "/media/cover-480.webp",
+        "width": 480,
+        "height": 384
+      },
+      {
+        "src": "/media/cover-960.webp",
+        "width": 960,
+        "height": 768
+      },
+      {
+        "src": "/media/cover-1440.webp",
+        "width": 1440,
+        "height": 1152
+      }
+    ]
+  },
+  "/assets/img/crepe.jpg": {
+    "width": 348,
+    "height": 348,
+    "variants": [
+      {
+        "src": "/media/crepe-480.webp",
+        "width": 348,
+        "height": 348
+      },
+      {
+        "src": "/media/crepe-960.webp",
+        "width": 348,
+        "height": 348
+      },
+      {
+        "src": "/media/crepe-1440.webp",
+        "width": 348,
+        "height": 348
+      }
+    ]
+  },
+  "/assets/img/csdms1.jpeg": {
+    "width": 1333,
+    "height": 1000,
+    "variants": [
+      {
+        "src": "/media/csdms1-480.webp",
+        "width": 480,
+        "height": 360
+      },
+      {
+        "src": "/media/csdms1-960.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "src": "/media/csdms1-1440.webp",
+        "width": 1333,
+        "height": 1000
+      }
+    ]
+  },
+  "/assets/img/fig1.jpg": {
+    "width": 624,
+    "height": 875,
+    "variants": [
+      {
+        "src": "/media/fig1-480.webp",
+        "width": 342,
+        "height": 480
+      },
+      {
+        "src": "/media/fig1-960.webp",
+        "width": 624,
+        "height": 875
+      },
+      {
+        "src": "/media/fig1-1440.webp",
+        "width": 624,
+        "height": 875
+      }
+    ]
+  },
+  "/assets/img/fig2.jpg": {
+    "width": 1478,
+    "height": 1108,
+    "variants": [
+      {
+        "src": "/media/fig2-480.webp",
+        "width": 480,
+        "height": 360
+      },
+      {
+        "src": "/media/fig2-960.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "src": "/media/fig2-1440.webp",
+        "width": 1440,
+        "height": 1080
+      }
+    ]
+  },
+  "/assets/img/geogiggle.jpg": {
+    "width": 800,
+    "height": 800,
+    "variants": [
+      {
+        "src": "/media/geogiggle-480.webp",
+        "width": 480,
+        "height": 480
+      },
+      {
+        "src": "/media/geogiggle-960.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "src": "/media/geogiggle-1440.webp",
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  "/assets/img/gis1.jpg": {
+    "width": 1489,
+    "height": 1600,
+    "variants": [
+      {
+        "src": "/media/gis1-480.webp",
+        "width": 447,
+        "height": 480
+      },
+      {
+        "src": "/media/gis1-960.webp",
+        "width": 893,
+        "height": 960
+      },
+      {
+        "src": "/media/gis1-1440.webp",
+        "width": 1340,
+        "height": 1440
+      }
+    ]
+  },
+  "/assets/img/gis2.jpg": {
+    "width": 900,
+    "height": 439,
+    "variants": [
+      {
+        "src": "/media/gis2-480.webp",
+        "width": 480,
+        "height": 234
+      },
+      {
+        "src": "/media/gis2-960.webp",
+        "width": 900,
+        "height": 439
+      },
+      {
+        "src": "/media/gis2-1440.webp",
+        "width": 900,
+        "height": 439
+      }
+    ]
+  },
+  "/assets/img/graduate_symposium.JPG": {
+    "width": 1600,
+    "height": 1486,
+    "variants": [
+      {
+        "src": "/media/graduate_symposium-480.webp",
+        "width": 480,
+        "height": 446
+      },
+      {
+        "src": "/media/graduate_symposium-960.webp",
+        "width": 960,
+        "height": 892
+      },
+      {
+        "src": "/media/graduate_symposium-1440.webp",
+        "width": 1440,
+        "height": 1337
+      }
+    ]
+  },
+  "/assets/img/hackathon.jpg": {
+    "width": 800,
+    "height": 1066,
+    "variants": [
+      {
+        "src": "/media/hackathon-480.webp",
+        "width": 360,
+        "height": 480
+      },
+      {
+        "src": "/media/hackathon-960.webp",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/media/hackathon-1440.webp",
+        "width": 800,
+        "height": 1066
+      }
+    ]
+  },
+  "/assets/img/iale.jpeg": {
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "src": "/media/iale-480.webp",
+        "width": 480,
+        "height": 360
+      },
+      {
+        "src": "/media/iale-960.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "src": "/media/iale-1440.webp",
+        "width": 1440,
+        "height": 1080
+      }
+    ],
+    "covers": [
+      {
+        "src": "/media/iale-cover-480.webp",
+        "width": 480,
+        "height": 300
+      },
+      {
+        "src": "/media/iale-cover-800.webp",
+        "width": 800,
+        "height": 500
+      },
+      {
+        "src": "/media/iale-cover-1200.webp",
+        "width": 1200,
+        "height": 750
+      }
+    ]
+  },
+  "/assets/img/IMG_0110.jpg": {
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "src": "/media/IMG_0110-480.webp",
+        "width": 480,
+        "height": 360
+      },
+      {
+        "src": "/media/IMG_0110-960.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "src": "/media/IMG_0110-1440.webp",
+        "width": 1440,
+        "height": 1080
+      }
+    ]
+  },
+  "/assets/img/IMG_5958 (1)copy.jpeg": {
+    "width": 1242,
+    "height": 1486,
+    "variants": [
+      {
+        "src": "/media/IMG_5958-(1)copy-480.webp",
+        "width": 401,
+        "height": 480
+      },
+      {
+        "src": "/media/IMG_5958-(1)copy-960.webp",
+        "width": 802,
+        "height": 960
+      },
+      {
+        "src": "/media/IMG_5958-(1)copy-1440.webp",
+        "width": 1204,
+        "height": 1440
+      }
+    ]
+  },
+  "/assets/img/path.jpg": {
+    "width": 1199,
+    "height": 585,
+    "variants": [
+      {
+        "src": "/media/path-480.webp",
+        "width": 480,
+        "height": 234
+      },
+      {
+        "src": "/media/path-960.webp",
+        "width": 960,
+        "height": 468
+      },
+      {
+        "src": "/media/path-1440.webp",
+        "width": 1199,
+        "height": 585
+      }
+    ]
+  },
+  "/assets/img/psi_hacka.png": {
+    "width": 1512,
+    "height": 1058,
+    "variants": [
+      {
+        "src": "/media/psi_hacka-480.webp",
+        "width": 480,
+        "height": 336
+      },
+      {
+        "src": "/media/psi_hacka-960.webp",
+        "width": 960,
+        "height": 672
+      },
+      {
+        "src": "/media/psi_hacka-1440.webp",
+        "width": 1440,
+        "height": 1008
+      }
+    ]
+  },
+  "/assets/img/stem2.jpg": {
+    "width": 1500,
+    "height": 1536,
+    "variants": [
+      {
+        "src": "/media/stem2-480.webp",
+        "width": 469,
+        "height": 480
+      },
+      {
+        "src": "/media/stem2-960.webp",
+        "width": 937,
+        "height": 960
+      },
+      {
+        "src": "/media/stem2-1440.webp",
+        "width": 1406,
+        "height": 1440
+      }
+    ]
+  },
+  "/assets/img/tamuccsympo.jpg": {
+    "width": 901,
+    "height": 1600,
+    "variants": [
+      {
+        "src": "/media/tamuccsympo-480.webp",
+        "width": 270,
+        "height": 480
+      },
+      {
+        "src": "/media/tamuccsympo-960.webp",
+        "width": 541,
+        "height": 960
+      },
+      {
+        "src": "/media/tamuccsympo-1440.webp",
+        "width": 811,
+        "height": 1440
+      }
+    ],
+    "covers": [
+      {
+        "src": "/media/tamuccsympo-cover-480.webp",
+        "width": 480,
+        "height": 300
+      },
+      {
+        "src": "/media/tamuccsympo-cover-800.webp",
+        "width": 800,
+        "height": 500
+      },
+      {
+        "src": "/media/tamuccsympo-cover-1200.webp",
+        "width": 1200,
+        "height": 750
+      }
+    ]
+  },
+  "/assets/img/thumb.png": {
+    "width": 424,
+    "height": 423,
+    "variants": [
+      {
+        "src": "/media/thumb-480.webp",
+        "width": 424,
+        "height": 423
+      },
+      {
+        "src": "/media/thumb-960.webp",
+        "width": 424,
+        "height": 423
+      },
+      {
+        "src": "/media/thumb-1440.webp",
+        "width": 424,
+        "height": 423
+      }
+    ]
+  },
+  "/assets/img/UASG.jpg": {
+    "width": 1131,
+    "height": 1600,
+    "variants": [
+      {
+        "src": "/media/UASG-480.webp",
+        "width": 339,
+        "height": 480
+      },
+      {
+        "src": "/media/UASG-960.webp",
+        "width": 679,
+        "height": 960
+      },
+      {
+        "src": "/media/UASG-1440.webp",
+        "width": 1018,
+        "height": 1440
+      }
+    ]
+  },
+  "/assets/img/Helene_motivation.png": {
+    "width": 857,
+    "height": 506,
+    "variants": [
+      {
+        "src": "/media/helene-forest-framework-480.webp",
+        "width": 480,
+        "height": 283
+      },
+      {
+        "src": "/media/helene-forest-framework-857.webp",
+        "width": 857,
+        "height": 506
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+[
+  {
+    "page": "/",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "issues": [
+      {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "score": 0.79,
+        "displayValue": "300 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "score": 0.47,
+        "displayValue": "260 ms"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "score": 0,
+        "displayValue": "Est savings of 64 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0,
+        "displayValue": "Est savings of 120 ms"
+      }
+    ]
+  },
+  {
+    "page": "/projects/helene/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "issues": [
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "score": 0.74,
+        "displayValue": "180 ms"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "score": 0.5,
+        "displayValue": "Est savings of 57 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0,
+        "displayValue": "Est savings of 150 ms"
+      }
+    ]
+  }
+]

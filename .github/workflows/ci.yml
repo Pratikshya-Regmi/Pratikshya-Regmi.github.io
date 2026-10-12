@@ -1,5 +1,5 @@
 name: Beautiful Jekyll CI
-on: [push, pull_request]
+on: workflow_dispatch
 jobs:
   build:
     name: Build Jekyll
@@ -22,5 +22,12 @@ jobs:
         env:
           JEKYLL_ENV: production
         run: bundle exec appraisal jekyll build --future --config _config_ci.yml,_config.yml
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Use public-safe documents in recovery artifact
+        run: |
+          cp astro-site/public/assets/CV_PR.pdf _site/assets/CV_PR.pdf
+          cp astro-site/public/assets/Pratikshya_Resume_oct025.pdf _site/assets/Pratikshya_Resume_oct025.pdf
+      - name: Retain legacy build for manual recovery review
+        uses: actions/upload-artifact@v4
+        with:
+          name: legacy-jekyll-review-only
+          path: _site
