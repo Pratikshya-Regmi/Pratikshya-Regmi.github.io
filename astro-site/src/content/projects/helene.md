@@ -20,6 +20,6 @@ The existing AGU 2025 presentation describes multi-temporal LiDAR (2017 and Nove
 ## My contribution
 Presented the study at AGU 2025. Related research workflows use DEMs of Difference, GRASS GIS terrain/hydrology tools, and Python for reproducible analysis.
 ## Research context
-This study connects detailed observations of landscape change with questions about recovery and future hazards. Quantitative result figures will be added with the supplied materials.
+This study connects detailed observations of landscape change with questions about recovery and future hazards.
 ## Related work
 [AGU 2025 presentation](/presentations/#conference-1) · [Graduate Research Symposium](/presentations/#symposium-2)
