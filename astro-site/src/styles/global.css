@@ -21,4 +21,4 @@ html{scroll-padding-top:120px}section[id],article[id]{scroll-margin-top:120px}.r
 
 /* Titles share the available width and wrap naturally on smaller screens. */
 .lidar-viewer-heading h2,.debris-viewer-heading h2{font-size:clamp(1.5rem,2.2vw,2.6rem);line-height:1.25;overflow-wrap:break-word}
-@media(min-width:768px){.page-head p,.record-summary,.record .prose p,.page-body>section>p{text-align:justify;hyphens:auto}.record .prose{max-width:none}}
+@media(min-width:768px){.page-head h1,.lidar-viewer-heading h2,.debris-viewer-heading h2{text-align:justify}.page-head p,.record-summary,.record .prose p,.page-body>section>p{text-align:justify;hyphens:auto}.record .prose{max-width:none}}
