@@ -7,8 +7,7 @@ order: 20
 date: '2024'
 kind: Webinar
 location: Virtual · CSDMS Fall Webinar Series
-pending:
-- Recording / slides — upload pending
+pending: []
 ---
 
 
