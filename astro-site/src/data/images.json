@@ -1,4 +1,9 @@
 {
+  "/media/cga-3988.webp": {
+    "width": 1200,
+    "height": 800,
+    "variants": [{"src": "/media/cga-3988.webp", "width": 1200, "height": 800}]
+  },
   "/assets/img/3mt.jpg": {
     "width": 1201,
     "height": 1600,
