@@ -1,4 +1,9 @@
 {
+  "/media/cga-1009740.webp": {
+    "width": 1200,
+    "height": 796,
+    "variants": [{"src": "/media/cga-1009740.webp", "width": 1200, "height": 796}]
+  },
   "/media/cga-3988.webp": {
     "width": 1200,
     "height": 800,
@@ -677,3 +682,4 @@
     ]
   }
 }
+
