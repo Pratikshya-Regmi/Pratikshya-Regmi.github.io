@@ -26,3 +26,7 @@ html{scroll-padding-top:120px}section[id],article[id]{scroll-margin-top:120px}.r
 .presentation-gallery summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; text-decoration: underline; text-underline-offset: .2em; }
 .presentation-gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 130px), 1fr)); gap: .75rem; }
 .presentation-gallery-grid img { display: block; width: 100%; height: auto; border-radius: .25rem; }
+.record-photo-pair { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; align-self: start; }
+.record-photo-pair figure img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.record-photo-pair figure:last-child img { object-position: center 32%; }
+

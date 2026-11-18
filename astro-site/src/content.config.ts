@@ -10,6 +10,8 @@ const schema = z.object({
   date: z.string().optional(),
   image: z.string().optional(),
   alt: z.string().optional(),
+  secondImage: z.string().optional(),
+  secondAlt: z.string().optional(),
   caption: z.string().optional(),
   imageKind: z.enum(['photo','diagram']).default('photo'),
   imagePlacement: z.enum(['all','detail']).default('all'),
@@ -28,3 +30,4 @@ export const collections = {
   publications: collection('publications'), engagement: collection('engagement'), highlights: collection('highlights'),
   certifications: collection('certifications'), pages: collection('pages')
 };
+
