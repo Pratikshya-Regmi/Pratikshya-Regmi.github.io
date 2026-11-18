@@ -8,6 +8,8 @@ date: November 16, 2026
 location: NC State University, Raleigh, North Carolina
 image: /media/cga-1009740.webp
 alt: Audience watching Pratikshya Regmi present at GIS Week at NC State's Center for Geospatial Analytics.
+secondImage: /media/cga-3979.webp
+secondAlt: Pratikshya speaking at the Center for Geospatial Analytics.
 links:
   - label: Watch the full GIS Week recording on YouTube
     url: https://www.youtube.com/watch?v=rUPdnZ-U4gU
@@ -18,14 +20,10 @@ related:
 
 Presented at GIS Week's Ph.D. Student Lightning Talks at NC State's Center for Geospatial Analytics. Pratikshya is the second presenter in the recording, which also includes two other talks.
 
-<div class="presentation-gallery-grid">
-    <img src="/media/cga-3979.webp" width="800" height="1200" loading="lazy" alt="Pratikshya speaking at the Center for Geospatial Analytics." />
-    <img src="/media/cga-3972.webp" width="800" height="1200" loading="lazy" alt="Pratikshya presenting to the GIS Week audience." />
-</div>
-
 <details class="presentation-gallery">
   <summary>View presentation photos</summary>
   <div class="presentation-gallery-grid">
+    <img src="/media/cga-3972.webp" width="800" height="1200" loading="lazy" alt="Pratikshya presenting to the GIS Week audience." />
     <img src="/media/cga-3988.webp" width="1200" height="800" loading="lazy" alt="Pratikshya presenting beside a GIS Week banner." />
   </div>
 </details>
